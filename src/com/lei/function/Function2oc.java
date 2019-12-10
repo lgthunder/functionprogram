@@ -79,6 +79,7 @@ public class Function2oc {
         return integer -> integer >= min && integer < bound;
     }
 
+
     public static void handlerMount(int mount, Predicate p, Consumer c) {
         if (p.test(mount)) {
             c.accept(mount);
